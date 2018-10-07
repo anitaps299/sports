@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Builder
-public class RunnersDTO {
+public class RunnerDTO {
 
 	Integer id;
 	String name;
