@@ -7,6 +7,6 @@ import lombok.Data;
 @Builder
 public class ClubDTO {
 
-	Integer idClub;
+	Integer id;
 	String name;
 }

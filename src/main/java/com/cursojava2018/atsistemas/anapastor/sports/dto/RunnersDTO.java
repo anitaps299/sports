@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder
 public class RunnersDTO {
 
-	Integer idRunner;
+	Integer id;
 	String name;
 	Integer year;
 }

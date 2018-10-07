@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder
 public class ResultsDTO {
 
-	Integer idResults;
+	Integer id;
 	Integer idRunner;
 	Integer seconds;
 }

@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @Builder
 public class TrialDTO {
-	Integer idPrueba;
+	Integer id;
 	String name;
 	String date; //Format: "yyyy/mm/dd"
 }
