@@ -19,9 +19,4 @@ public class ClubServiceImpl implements ClubService{
 		return clubDao.save(club);
 	}
 
-	@Override
-	public Optional<Club> findById(Integer id) {
-		return clubDao.findById(id);
-	}
-
 }

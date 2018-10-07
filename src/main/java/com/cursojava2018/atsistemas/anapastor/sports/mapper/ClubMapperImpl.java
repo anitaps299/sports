@@ -17,9 +17,10 @@ public class ClubMapperImpl implements ClubMapper{
 
 	@Override
 	public Club mapToModel(ClubDTO dto) {
-		final Club club = clubService.findById(dto.getId()).orElse(new Club());
+		final Club club = new Club();
 		club.setName(dto.getName());
-		return club;
+		club.setIdClub(dto.getId());
+		return club;	
 	}
 
 	@Override
@@ -28,10 +29,6 @@ public class ClubMapperImpl implements ClubMapper{
 				name(model.getName()).build();
 	}
 
-	@Override
-	public List<ClubDTO> mapToDTO(List<Club> models) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 }
