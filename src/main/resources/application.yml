@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/sports
     username: ana
-    password: 2909
+    password: 
   jpa:
     show-sql: true
     hibernate:

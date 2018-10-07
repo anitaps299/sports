@@ -5,9 +5,9 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Runners {
+public class ResultsDTO {
 
+	Integer idResults;
 	Integer idRunner;
-	String name;
-	Integer year;
+	Integer seconds;
 }

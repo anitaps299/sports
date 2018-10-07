@@ -5,8 +5,8 @@ import lombok.Data;
 
 @Data
 @Builder
-public class Club {
-
-	Integer idClub;
+public class TrialDTO {
+	Integer idPrueba;
 	String name;
+	String date; //Format: "yyyy/mm/dd"
 }
