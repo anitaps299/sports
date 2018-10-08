@@ -15,22 +15,6 @@ import com.cursojava2018.atsistemas.anapastor.sports.service.ClubService;
 @RequestMapping(value="/club")
 public class ClubController {
 	
-	/** 
-	 * 
-	 * 	@Autowired
-	UserService userService;
-	@Autowired
-	UserMapper mapper;
-	
-	
-	 * @PostMapping
-	public UserDTO create(@RequestBody UserDTO userToCreate) {
-		final User user = mapper.mapToModel(userToCreate);
-		final User userCreated = userService.create(user);
-		return mapper.mapToDTO(userCreated);
-	}
-	 */
-	
 	@Autowired
 	ClubMapper clubMapper;
 	@Autowired

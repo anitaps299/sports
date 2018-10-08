@@ -29,6 +29,5 @@ public class ClubMapperImpl implements ClubMapper{
 				name(model.getName()).build();
 	}
 
-	
 
 }
