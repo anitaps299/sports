@@ -26,6 +26,15 @@ public class Club {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "club")
 	private List<Runner> runners = new ArrayList<>();
 	
+	public void addRunner(Runner runner) {
+		if(!runners.contains(runner)) {
+			runners.add(runner);
+		}
+	}
+	
+	public void removeRunner(Runner runner) {
+		runners.remove(runner);
+	}
 	
 	
 }

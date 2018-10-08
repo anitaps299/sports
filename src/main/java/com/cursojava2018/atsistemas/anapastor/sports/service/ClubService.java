@@ -1,6 +1,8 @@
 package com.cursojava2018.atsistemas.anapastor.sports.service;
 
 
+import java.util.Optional;
+
 import com.cursojava2018.atsistemas.anapastor.sports.model.Club;
 
 public interface ClubService {
@@ -11,5 +13,7 @@ public interface ClubService {
 	 * @return Club creado
 	 */
 	Club create(Club club);
+
+	Optional<Club> findById(Integer idClub);
 
 }

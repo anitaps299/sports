@@ -1,6 +1,8 @@
 package com.cursojava2018.atsistemas.anapastor.sports.service;
 
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,11 @@ public class ClubServiceImpl implements ClubService{
 	@Override
 	public Club create(Club club) {
 		return clubDao.save(club);
+	}
+
+	@Override
+	public Optional<Club> findById(Integer idClub) {
+		return clubDao.findById(idClub);
 	}
 
 }
