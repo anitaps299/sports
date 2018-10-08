@@ -31,4 +31,14 @@ public class Runner {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "runner")
 	private List<Result> results = new ArrayList<>();
 	
+	public void addResult(Result result) {
+		if(!results.contains(result)) {
+			results.add(result);
+		}
+	}
+	
+	public void removeResult(Result result) {
+		results.remove(result);
+	}
+	
 }

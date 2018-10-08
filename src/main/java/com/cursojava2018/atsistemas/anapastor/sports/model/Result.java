@@ -25,4 +25,6 @@ public class Result {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Trial trial;
+	
+	
 }

@@ -1,5 +1,7 @@
 package com.cursojava2018.atsistemas.anapastor.sports.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,11 @@ public class TrialServiceImpl implements TrialService{
 	@Override
 	public Trial create(Trial trial) {
 		return trialDao.save(trial);
+	}
+
+	@Override
+	public Optional<Trial> findById(Integer idTrial) {
+		return trialDao.findById(idTrial);
 	}
 
 }
